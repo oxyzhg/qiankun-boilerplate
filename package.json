@@ -1,0 +1,23 @@
+{
+  "name": "qiankun-menorepo",
+  "version": "1.0.0",
+  "description": "qiankun demo menorepo",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm install && lerna exec -- npm install",
+    "dev:app-core": "lerna run serve --scope=app-core",
+    "dev:app1": "lerna run serve --scope=app1",
+    "dev:app2": "lerna run serve --scope=app2",
+    "dev:app3": "lerna run start --scope=app3",
+    "dev": "lerna run serve"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
